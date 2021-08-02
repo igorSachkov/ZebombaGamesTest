@@ -1,4 +1,3 @@
-import { data } from "./modules/data.js"
 const player = document.querySelector(".player")
 const startButton = document.querySelector(".to-the-university")
 const friendsContainer = document.querySelector(".friends-carousel-container")
@@ -12,6 +11,109 @@ const ratingContainer = document.querySelector(".rating-container")
 const addToFriendsImg = "./images/nav/plus.png"
 const playerLocation = new Array(10).fill(0)
 playerLocation[0] = 1
+
+
+const data = {
+    "rating": [
+		{
+			"id": "123",
+			"name": "Владимир",
+			"lastName": "Ларионов",
+			"img": "./male.png",
+			"points": "463"
+		},
+		{
+			"id": "9",
+			"name": "Владимир",
+			"lastName": "Сергеев",
+			"img": "./male.png",
+			"points": "521"
+		},
+		{
+			"id": "231",
+			"name": "Вениамин",
+			"lastName": "Васильев",
+			"img": "./male.png",
+			"points": "865"
+		},
+		{
+			"id": "321",
+			"name": "Мария",
+			"lastName": "Логинова",
+			"img": "./female.png",
+			"points": "865"
+		},
+		{
+			"id": "492",
+			"name": "Борис",
+			"lastName": "Казанцев",
+			"img": "./male.png",
+			"points": "784"
+		},
+		{
+			"id": "452",
+			"name": "Полина",
+			"lastName": "Калинина",
+			"img": "./female.png",
+			"points": "225"
+		},
+		{
+			"id": "796",
+			"name": "Даниил",
+			"lastName": "Воробьёв",
+			"img": "./male.png",
+			"points": "642"
+		},
+		{
+			"id": "4",
+			"name": "Эрик",
+			"lastName": "Аксёнов",
+			"img": "./male.png",
+			"points": "150"
+		},
+		{
+			"id": "1155",
+			"name": "Иван",
+			"lastName": "Иванов",
+			"img": "./male.png",
+			"points": "100"
+		},
+		{
+			"id": "12145",
+			"name": "Артем",
+			"lastName": "Алексеев",
+			"img": "./male.png",
+			"points": "1000"
+		}
+    ],
+    "friends": [
+        {
+            "id": "9",
+            "name": "Владимир",
+            "lastName": "Сергеев",
+            "img": "./male.png"
+        },
+        {
+            "id": "4",
+            "name": "Эрик",
+            "lastName": "Аксёнов",
+            "img": "./male.png"
+        },
+        {
+            "id": "15411",
+            "name": "Ирина",
+            "lastName": "Чеснокова",
+            "img": "./female.png"
+        },
+        {
+            "id": "15564",
+            "name": "Дарина",
+            "lastName": "Боброва",
+            "img": "./female.png"
+        }
+    ]
+}
+
 
 const checkPoints = [0, 11.5, 20.5, 30, 39, 49.5, 56.7, 65.5, 77.5, 87, 100]
 
